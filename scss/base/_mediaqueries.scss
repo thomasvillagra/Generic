@@ -1,0 +1,37 @@
+@media screen and (max-width: 640px){
+    main{
+        .articuloUno{
+            @include flex (flex,space-around,center);
+            flex-direction: column;
+            .parrafos{
+                p{
+                    padding: 30px 0px 0px 0px;
+                }
+            }
+            .calendario{
+                margin: 30px;
+            }
+        }
+    }
+}
+@media screen and(max-width: 640px) {
+    main{
+        .articuloDos{
+            @include flex (flex,space-around,center);
+            flex-direction: column;
+            p{
+                margin: 30px;
+            }
+        }
+    }
+    footer{
+        height: auto;
+        @include flex(flex,start,center);
+        flex-direction: column-reverse;
+        .logoFooter{
+            p{
+                display: none;
+            }
+        }
+    }
+}

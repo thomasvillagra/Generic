@@ -1,0 +1,52 @@
+main{
+    .articuloUno{
+        //@include flex (flex,space-around,center);
+        display: grid;
+        grid-template-areas: 
+        "parrafos calendario";
+        .parrafos{
+            p{
+                width: 325px;
+                height: 265px;
+                font-size: 15px;
+                color: #232323;
+                font-family: "Helvetica Neue LT Pro";
+                padding: 15%;
+            }
+        }
+        .calendario{
+            background-color: rgba(132, 137, 141, 0.452);
+            padding: 10%;
+            @include flex (flex,center,center);
+            flex-direction:column;
+            align-items: center;
+            img{
+                width: 80px;
+                height: 80px;
+            }
+            .textoCalendario{
+                h3{
+                    font-size: 16px;
+                    color: #23135f;
+                    font-family: "Helvetica Neue LT Pro";
+                    text-align: center;
+                    padding: 10px;
+                }
+                p{
+                    padding: 0px 10px 10px 10px;
+                    text-align: center;
+                }
+                input{
+                    background-color: #23135f;
+                    width: 200px;
+                    height: 35px;
+                    font-size: 17px;
+                    color: #eeeeee;
+                    font-family: "arial";
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
